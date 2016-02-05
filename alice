@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+dir=/fs/ALICE
+
+cd $dir
+
+perl=`whereis perl | awk '{print $2}'`
+
+$perl shell.pl
