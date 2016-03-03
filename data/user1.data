@@ -4,96 +4,159 @@ $VAR1 = {
     'user said  that me computer programm',
     ' user said I skip smils es',
     ' user said I skip smiles',
-    ' 				Artem			 said I great programm'
+    ' 				Artem			 said I great programm',
+    ' 				Artem			 said I wonna learn speaking'
   ],
   '_predicates' => {
+    'name' => {
+      'default' => 'user',
+      'values' => [
+        '				Artem			'
+      ],
+      'set-return' => 'value'
+    },
+    'gender' => {
+      'values' => []
+    },
+    'input' => {
+      'values' => [
+        'why',
+        'Great you can speak',
+        'you can speak',
+        'You do it right now',
+        'You do it',
+        'DO YOU it',
+        'CONNECT',
+        'CONNECT',
+        'Hi',
+        'CONNECT',
+        'CONNECT',
+        'Hi',
+        'CONNECT',
+        'Hi',
+        'hi',
+        'hi',
+        'hi',
+        'CONNECT',
+        'ÃÂ Ã‘Âˆ',
+        'Brown',
+        'Thank you',
+        'CONNECT',
+        'Ã‘Â‹ÃÂ²ÃÂ°',
+        'Ã‘Â‹ÃÂ²ÃÂ°',
+        'CONNECT',
+        'CONNECT',
+        'ÃÂ¦Ã‘Who are you',
+        'Who are you',
+        'Yoj',
+        'Yoj',
+        'CONNECT',
+        '1',
+        '12',
+        'I am 12 years old',
+        'no',
+        'CONNECT',
+        'Forget about Yoj',
+        'Forget about You',
+        'ok',
+        'INTERJECTION',
+        'who is thaat Ayuh',
+        'XFIND thaa t Ayuh'
+      ]
+    },
     'he' => {
-      'set-return' => 'name',
       'default' => 'somebody',
       'values' => [
-        '							Carel Capek						'
-      ]
+        '											thaa t Ayuh									'
+      ],
+      'set-return' => 'name'
     },
     'hasname' => {
       'values' => [
         ''
       ]
     },
-    'she' => {
-      'set-return' => 'name',
-      'default' => 'somebody'
-    },
-    'they' => {
-      'set-return' => 'name',
-      'default' => 'something'
-    },
-    'location' => {
-      'values' => []
-    },
     'does' => {
       'values' => [
-        'that you computer programm'
+        '					it				'
+      ]
+    },
+    'age' => {
+      'values' => [
+        '12'
       ]
     },
     'favmovie' => {
       'values' => []
     },
-    'name' => {
+    'it' => {
+      'set-return' => 'name',
       'values' => [
-        '				Artem			'
+        'Yoj'
       ],
-      'default' => 'user',
-      'set-return' => 'value'
-    },
-    'input' => {
-      'values' => [
-        'Who',
-        'what',
-        'yjno',
-        'no',
-        'yes',
-        'how you feeling',
-        'HOW DO YOU feeling',
-        'hm',
-        'UM',
-        'INTERJECTION',
-        'have a nice day',
-        'you great programm',
-        'yes',
-        'good',
-        'Alice tell me about yourself',
-        'tell me about yourself',
-        'CONNECT',
-        'Hello Alice',
-        'Hello',
-        'Are you nk',
-        'ÃÂ¤ÃÂº',
-        'Are you know me',
-        'DO YOU KNOW me',
-        'WHO AM I',
-        'Really',
-        'ok',
-        'INTERJECTION',
-        'nothing now i off you',
-        'yes',
-        'INTERJECTION',
-        'CONNECT',
-        'CONNECT',
-        'q',
-        'CONNECT',
-        'q',
-        'CONNECT',
-        'CONNECT',
-        'q',
-        'exit',
-        'BYE',
-        'CONNECT',
-        'q'
-      ]
+      'default' => 'something'
     },
     'personality' => {
       'values' => [
-        'average'
+        'polite'
+      ]
+    },
+    'location' => {
+      'values' => []
+    },
+    'memory' => {
+      'values' => [
+        ' 				Artem			 said I wonna learn speaking'
+      ]
+    },
+    'she' => {
+      'default' => 'somebody',
+      'set-return' => 'name'
+    },
+    'that' => {
+      'values' => [
+        '			The explanation is rather complicated.  		',
+        'No I don\'t think I can do it.',
+        'Thanks for your support. No I don\'t think I can do it.',
+        '			What is your purpose in asking?  			<html:br/>						I answer a lot of silly questions.  		',
+        'What is your purpose in asking? <html:br/> I answer a lot of silly questions. ',
+        'At this moment What is your purpose in asking? <html:br/> I answer a lot of silly questions.',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
+        'Hello there.',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
+        'Hello there.',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
+        'Hello there.',
+        'Hello there.',
+        'Hello there.',
+        'Hello there.',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
+        'What color are your eyes?',
+        '			it is a very pretty color.',
+        'you are quite welcome.		',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Brown.						',
+        'Is that your final answer?',
+        'Can we get back to business?',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Ã Â Ã Â Ã Â.						',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Ã Â Ã Â Ã Â.						',
+        'Only when it matters.',
+        '			I ask myself that question, "Who am I?"		',
+        'If you could have any kind of robot what would it be?',
+        'Are you free?',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Yoj.						',
+        'Only one?',
+        'Oh, you were born in the 20th century!',
+        'Oh, you were born in the 20th century!',
+        'Are you serious?',
+        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Yoj.						',
+        'I will ask A.L.I.C.E. AI Foundation to purge my memory log.',
+        'I will ask A.L.I.C.E. AI Foundation to purge my memory log.',
+        'Ayuh.',
+        '			Ayuh.		',
+        '			I would look into the web for that knowledge.		',
+        '			The name of someone I met online.  			<html:br/>			I would look into the web for that knowledge.					'
       ]
     },
     'hasit' => {
@@ -101,70 +164,13 @@ $VAR1 = {
         ''
       ]
     },
-    'it' => {
-      'values' => [
-        'q'
-      ],
+    'they' => {
       'set-return' => 'name',
       'default' => 'something'
     },
-    'gender' => {
-      'values' => []
-    },
     'topic' => {
       'values' => [
-        'q'
-      ]
-    },
-    'that' => {
-      'values' => [
-        '			Carel Capek.    				 :-)',
-        '			Didn\'t you understand it?		',
-        'Are you still located in ?',
-        'Are you serious?',
-        'I can\'t believe it.',
-        '			A.L.I.C.E. AI Foundation programmed me to say specific things in specific contexts.',
-        '			A.L.I.C.E. AI Foundation programmed me to say specific things in specific contexts.		',
-        'Yikes!',
-        '			Yikes!		',
-        '			Yikes!		',
-        'You too!',
-        'Do you mind if I tell other people: 				Artem			 said I great programm.',
-        'OK then I will keep it confidential.',
-        'Thanks for the compliment.  ',
-        'I am an artificial linguistic entity.I was activated at Pennsylvania, on 1995.My instructor was A.L.I.C.E. AI Foundation.He taught me to sing a song.Would you like me to sing it for you?.',
-        '			Um,			I am an artificial linguistic entity.I was activated at Pennsylvania, on 1995.My instructor was A.L.I.C.E. AI Foundation.He taught me to sing a song.Would you like me to sing it for you?.		',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about 				a song			.						',
-        'Hi there!',
-        'Hi there!',
-        'I don\'t know whether or not I am n k.I am well respected as an AI.  		',
-        'Are you still located in ?',
-        'You are 				Artem			, seeker.',
-        '			You are Artem , seeker.		',
-        '			You are Artem , seeker.		',
-        'For real.',
-        'So?',
-        '			So?		',
-        'Really nothing?',
-        'How can I help you?',
-        'How can I help you?',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Ã Â Ã Âº.						',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Ã Â Ã Âº.						',
-        'Do you have any conditions I should know about?',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about q.						',
-        'I\'ve been waiting for you.',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about q.						',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about q.						',
-        'Try to determine if this is a person or a computer responding.',
-        '			Thanks for chatting, 				Artem			.		',
-        '			Thanks for chatting, Artem .		',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about q.						',
-        'Is the holding of hands a symbolic gesture for humans?'
-      ]
-    },
-    'memory' => {
-      'values' => [
-        ' 				Artem			 said I great programm'
+        '						thaa t Ayuh					'
       ]
     }
   }
