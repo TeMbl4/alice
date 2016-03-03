@@ -225,17 +225,22 @@ sub _setup
 
 	while ( length $self->{user_prompt} < length $self->{bot_prompt} )
 	{
-		$self->{user_prompt} =~ s/ > $/  > /;
+		$self->{user_prompt} =~ s/ > $/  >> /;
 	}
 
-	print OUT "\nAIML Shell version $VERSION\n\n";
+############################################################################################################
 
-	print OUT "using configuration file : $self->{config_file}\n";
-	print OUT "using knowledge file     : $knowledge_file\n";
-	print OUT "working with bot         : $self->{bot_id}\n";
-	print OUT "user no.                 : $self->{user_id}\n";
-	print OUT "\t", scalar @ { AIML::Knowledge::getTemplates ( $self->{bot_id} ) || [] };
-	print OUT " categories loaded in $t1 sec\n";
+#	print OUT "\nAIML Shell version $VERSION\n\n";
+
+#	print OUT "using configuration file : $self->{config_file}\n";
+#	print OUT "using knowledge file     : $knowledge_file\n";
+#	print OUT "working with bot         : $self->{bot_id}\n";
+#	print OUT "user no.                 : $self->{user_id}\n";
+#	print OUT "\t", scalar @ { AIML::Knowledge::getTemplates ( $self->{bot_id} ) || [] };
+#	print OUT " categories loaded in $t1 sec\n";
+
+############################################################################################################
+
 
 #		my @stats = stat ( IN );
 #
@@ -666,7 +671,7 @@ END
 
 sub response
 {
-	my $self		= shift;
+	my $self	= shift;
 	my $input	= shift;
 
 	$input = ''		unless defined $input;
@@ -699,7 +704,44 @@ sub response
 
 	$bot->save();		#	free lock on memory !!!
 
+#######################Responce section####################################
+	sayText($talker->as_string());
 	return $talker->as_string();
+#######################Responce section####################################
+
+}
+
+require Encode;
+use URI::Escape;
+use LWP::UserAgent;
+
+our $LANG="en";
+our $mp3_data;
+
+
+sub sayText
+{
+	my $text = shift;
+#	print "+OK - Speaking\n";
+	my $url = "http://translate.google.com/translate_tts?tl=".$LANG."&q=".uri_escape_utf8($text)."&client=tw-ob";
+	my $ua = LWP::UserAgent->new(
+		agent => "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.872.0 Safari/535.2");
+
+	$ua->get($url, ':content_cb' => \&callback);
+
+	open (MP3, "|padsp splay -M") or die "[err] Can't save: $!\n";
+		print MP3 $mp3_data;
+	close(MP3);
+
+	$mp3_data = undef;
+
+#	print "+OK - Done!\n";
+	return;
+}
+
+sub callback {
+   my ($data, $response, $protocol) = @_;
+   $mp3_data .= $data; #
 }
 
 =pod
