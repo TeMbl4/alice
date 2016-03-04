@@ -1,162 +1,133 @@
 $VAR1 = {
-  '_gossip' => [
-    'user said  don ot belive in C god',
-    'user said  that me computer programm',
-    ' user said I skip smils es',
-    ' user said I skip smiles',
-    ' 				Artem			 said I great programm',
-    ' 				Artem			 said I wonna learn speaking'
-  ],
   '_predicates' => {
-    'name' => {
-      'default' => 'user',
+    'it' => {
       'values' => [
-        '				Artem			'
+        'bue'
       ],
-      'set-return' => 'value'
-    },
-    'gender' => {
-      'values' => []
-    },
-    'input' => {
-      'values' => [
-        'why',
-        'Great you can speak',
-        'you can speak',
-        'You do it right now',
-        'You do it',
-        'DO YOU it',
-        'CONNECT',
-        'CONNECT',
-        'Hi',
-        'CONNECT',
-        'CONNECT',
-        'Hi',
-        'CONNECT',
-        'Hi',
-        'hi',
-        'hi',
-        'hi',
-        'CONNECT',
-        'ÃÂ Ã‘Âˆ',
-        'Brown',
-        'Thank you',
-        'CONNECT',
-        'Ã‘Â‹ÃÂ²ÃÂ°',
-        'Ã‘Â‹ÃÂ²ÃÂ°',
-        'CONNECT',
-        'CONNECT',
-        'ÃÂ¦Ã‘Who are you',
-        'Who are you',
-        'Yoj',
-        'Yoj',
-        'CONNECT',
-        '1',
-        '12',
-        'I am 12 years old',
-        'no',
-        'CONNECT',
-        'Forget about Yoj',
-        'Forget about You',
-        'ok',
-        'INTERJECTION',
-        'who is thaat Ayuh',
-        'XFIND thaa t Ayuh'
-      ]
-    },
-    'he' => {
-      'default' => 'somebody',
-      'values' => [
-        '											thaa t Ayuh									'
-      ],
+      'default' => 'something',
       'set-return' => 'name'
     },
-    'hasname' => {
-      'values' => [
-        ''
-      ]
-    },
-    'does' => {
-      'values' => [
-        '					it				'
-      ]
-    },
-    'age' => {
-      'values' => [
-        '12'
-      ]
-    },
-    'favmovie' => {
-      'values' => []
-    },
-    'it' => {
+    'they' => {
       'set-return' => 'name',
-      'values' => [
-        'Yoj'
-      ],
       'default' => 'something'
-    },
-    'personality' => {
-      'values' => [
-        'polite'
-      ]
-    },
-    'location' => {
-      'values' => []
     },
     'memory' => {
       'values' => [
         ' 				Artem			 said I wonna learn speaking'
       ]
     },
+    'age' => {
+      'values' => [
+        '33'
+      ]
+    },
+    'personality' => {
+      'values' => [
+        'polite'
+      ]
+    },
+    'topic' => {
+      'values' => [
+        'bue'
+      ]
+    },
+    'location' => {
+      'values' => []
+    },
     'she' => {
       'default' => 'somebody',
       'set-return' => 'name'
     },
+    'input' => {
+      'values' => [
+        'who is this Ayuh',
+        'Hm',
+        'UM',
+        'INTERJECTION',
+        'Do you understand me',
+        'nice',
+        'Ok what do you wand',
+        'what do you wand',
+        'OK',
+        'INTERJECTION',
+        'Ok I am to',
+        'I am to',
+        'OK',
+        'INTERJECTION',
+        'How old is you',
+        'really you are so old',
+        'you are so old',
+        'YOU ARE old',
+        'Great',
+        'Ok just stoped speak with me',
+        'just stoped speak with me',
+        'stoped speak with me',
+        'stoped speak',
+        'OK',
+        'INTERJECTION',
+        'yes',
+        'INTERJECTION',
+        'Ih ben',
+        'Once in Germany',
+        'in Germany',
+        'Yes i like it',
+        'YES',
+        'i like it',
+        'Building peoples',
+        '33',
+        'I AM 33 YEARS OLD',
+        'yes',
+        'what year it was',
+        'WHEN it was',
+        'Great thanks',
+        'Great',
+        'bue'
+      ]
+    },
     'that' => {
       'values' => [
-        '			The explanation is rather complicated.  		',
-        'No I don\'t think I can do it.',
-        'Thanks for your support. No I don\'t think I can do it.',
-        '			What is your purpose in asking?  			<html:br/>						I answer a lot of silly questions.  		',
-        'What is your purpose in asking? <html:br/> I answer a lot of silly questions. ',
-        'At this moment What is your purpose in asking? <html:br/> I answer a lot of silly questions.',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
-        'Hello there.',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
-        'Hello there.',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
-        'Hello there.',
-        'Hello there.',
-        'Hello there.',
-        'Hello there.',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about speak.						',
-        'What color are your eyes?',
-        '			it is a very pretty color.',
-        'you are quite welcome.		',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Brown.						',
-        'Is that your final answer?',
-        'Can we get back to business?',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Ã Â Ã Â Ã Â.						',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Ã Â Ã Â Ã Â.						',
-        'Only when it matters.',
-        '			I ask myself that question, "Who am I?"		',
-        'If you could have any kind of robot what would it be?',
-        'Are you free?',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Yoj.						',
-        'Only one?',
+        'They are someone just like you, that I met online.',
+        'Excuse me!',
+        '			Excuse me!		',
+        '			Excuse me!		',
+        'Every word you say.',
+        'Thank you for that remark.',
+        '			I like to meet new people online.  		',
+        'Great.',
+        '			Great.		',
+        '			I like to meet new people online. 			Great.		',
+        'Good gossip: you are to.',
+        'And?',
+        '			And?		',
+        '			Good gossip: you are to.			And?		',
+        '			under 40.  		',
+        'Time has no real meaning for me.',
+        'Time has no real meaning for me.',
+        'For real. Time has no real meaning for me.		',
+        'I\'m glad you liked it 				Artem			.',
+        'Can you speak any foreign languages?',
+        'Only with you? Can you speak any foreign languages?',
+        '			Only with you? Can you speak any foreign languages?		',
+        'Take it easy.',
+        '			Take it easy.		',
+        '			Only with you? Can you speak any foreign languages?			Take it easy.		',
+        'And?',
+        'And?',
+        'Have you ever been to Europe?',
+        'What is it like in there?  ',
+        'When? What is it like in there?		',
+        'This was not a yes or no question.',
+        'What do you like about in Germany?',
+        'This was not a yes or no question. What do you like about in Germany?',
+        'How old are you?',
         'Oh, you were born in the 20th century!',
         'Oh, you were born in the 20th century!',
-        'Are you serious?',
-        '		Hi, pleased to meet you								again, 				Artem			.				We were talking about Yoj.						',
-        'I will ask A.L.I.C.E. AI Foundation to purge my memory log.',
-        'I will ask A.L.I.C.E. AI Foundation to purge my memory log.',
-        'Ayuh.',
-        '			Ayuh.		',
-        '			I would look into the web for that knowledge.		',
-        '			The name of someone I met online.  			<html:br/>			I would look into the web for that knowledge.					'
+        'Like a lot of people around here.',
+        'That makes a lot of sense to me, now that you explain it.',
+        '			That makes a lot of sense to me, now that you explain it.		',
+        'I\'m glad you liked it 				Artem			.',
+        'I\'m glad you liked it Artem .',
+        'Are you still located in ?'
       ]
     },
     'hasit' => {
@@ -164,15 +135,54 @@ $VAR1 = {
         ''
       ]
     },
-    'they' => {
-      'set-return' => 'name',
-      'default' => 'something'
+    'gender' => {
+      'values' => []
     },
-    'topic' => {
+    'like' => {
       'values' => [
-        '						thaa t Ayuh					'
+        'in Germany'
+      ]
+    },
+    'does' => {
+      'values' => [
+        '					it				'
+      ]
+    },
+    'he' => {
+      'values' => [
+        '											thaa t Ayuh									'
+      ],
+      'set-return' => 'name',
+      'default' => 'somebody'
+    },
+    'name' => {
+      'default' => 'user',
+      'set-return' => 'value',
+      'values' => [
+        '				Artem			'
+      ]
+    },
+    'is' => {
+      'values' => [
+        'to'
+      ]
+    },
+    'favmovie' => {
+      'values' => []
+    },
+    'hasname' => {
+      'values' => [
+        ''
       ]
     }
-  }
+  },
+  '_gossip' => [
+    'user said  don ot belive in C god',
+    'user said  that me computer programm',
+    ' user said I skip smils es',
+    ' user said I skip smiles',
+    ' 				Artem			 said I great programm',
+    ' 				Artem			 said I wonna learn speaking'
+  ]
 };
 
